@@ -1,0 +1,6 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar los archivos de compilación de npm
+npm-debug.log
+yarn-error.log
