@@ -1,12 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+
+  </head>
+  <body>
+    <section class="relative h-auto patron">
+      <section class="relative z-2">
+        <div
+          class="absolute top-0 left-0 w-[60%] h-full -z-2 bg-[#0396D6] opacity-70 curved-bg overflow-visible animate-[slideIn_1.5s_ease-out]"
+        ></div>
+
+        <section
+          class="w-full h-[100px] flex flex-col justify-center items-center z-10 backdrop-blur-md"
+        >
+          <h1 class="text-4xl font-ligth">BYTES CREATIVOS XPERTS</h1>
+          <h3 class="font-semibold">Esta construyendo algo asombroso</h3>
+        </section>
+
+        <!-- header-->
+        <section class="dark:bg-gray-900">
+          <div
+            class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 relative"
+          >
+            <h1
+              class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+            >
+            <span class="underline underline-offset-3 decoration-8 decoration-white dark:decoration-blue-600"> Sé el primero </span>en conocer nuestras soluciones y ofertas  <span class="underline underline-offset-3 decoration-8 decoration-[#0396D6] dark:decoration-blue-600"> exclusivas</span>
+            </h1>
+
+            
+          </div>
+        </section>
+
+        <!-- formulario -->
+        <section class="grid grid-cols-2 gap-4 h-auto w-full relative p-4">
+            <h2 id="suscribete" class="md:text-5xl text-3xl font-bold absolute -z-1 md:top-[-30px] top-[-10px] md:left-10 left-10 text-dark-500 md:text-white  tracking-wide "></h2>
+           
+          <div class="h-full flex flex-col col-span-2 md:col-span-1 p-4">
+            <section
+              class="flex flex-col gap-4 h-full bg-white rounded-lg p-4 shadow-lg"
+            >
+              <form class="p-4 relative" name="form_suscripcion">
+                <div
+                  class="absolute w-64 h-76 bg-white opacity-50 blur-xl -z-1 left-[-32px] right-0 bottom-0"
+                ></div>
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                  <div>
+                    <label
+                      for="nombre"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      id="nombre"
+                      class="border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Nombre"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="apellido"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >Apellido</label
+                    >
+                    <input
+                      type="text"
+                      id="apellido"
+                      class="border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Apellido"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="correo@correo.com"
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="text-white bg-[#0396D6] hover:bg-[#3fbff7] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  ¡QUIERO ESTAR AL TANTO, ENVIAR!
+                </button>
+              </form>
+            </section>
+          </div>
+          <div
+            class="h-full hidden md:flex justify-center items-centercol-span-2 md:col-span-1"
+          >
+            <img
+              src="src/img/hormiga.png"
+              class="w-70 h-70 object-cover"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section class="flex flex-col gap-4 md:w-[50%] w-full p-6">
+          <ul
+            class="max-w-md divide-y flex flex-col gap-4 divide-gray-200 dark:divide-gray-700"
+          >
+            <li
+              class="pb-3 sm:pb-4 bg-white rounded-lg p-2 shadow-lg relative overflow-hidden"
+            >
+              <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <div class="shrink-0">
+                  <i class="ti ti-mail text-2xl"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p
+                    class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                  >
+                    Correo electrónico
+                  </p>
+                  <p class="text-sm text-[#0396D6] truncate dark:text-gray-400">
+                    cristina.leon@bytescxpert.com
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-[5px] rounded-lg absolute bottom-0 left-0 right-0 bg-[#52b053] w-full"
+              ></div>
+            </li>
+            <li
+              class="pb-3 sm:pb-4 bg-white rounded-lg p-2 shadow-lg relative overflow-hidden"
+            >
+              <div
+                class="flex items-center justify-center space-x-4 rtl:space-x-reverse"
+              >
+                <div class="shrink-0">
+                  <i class="ti ti-phone text-2xl"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p
+                    class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                  >
+                    Teléfono
+                  </p>
+                  <p class="text-sm text-[#0396D6] truncate dark:text-gray-400">
+                    +34 655 62 30 40
+                  </p>
+                </div>
+              </div>
+              <div
+                class="h-[5px] rounded-lg absolute bottom-0 left-0 right-0 bg-[#52b053] w-full"
+              ></div>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <footer class="bg-[#202020]">
+      <div class="w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="grid grid-cols-2">
+          <div
+            class="mb-6 md:mb-0 flex justify-center col-span-2 md:col-span-1"
+          >
+            <a href="https://bytescreativos.net/" class="flex">
+              <img
+                src="https://bytescreativos.net/img/contenido/logobytes.png"
+                class="h-16 opacity-40 me-3"
+                alt="bytes Logo"
+              />
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="flex justify-end">
+          <div class="flex mt-4 md:justify-self sm:mt-0">
+            <img
+              src="https://bytescreativos.net/img/contenido/logoomnitet.png"
+              class="h-10"
+              alt=""
+            />  
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+     
+    </script>
+    <script src="src/js/susbcripcion.js"></script>
+    <script src="src/js/animaciones.js"></script>
+  </body>
+</html>

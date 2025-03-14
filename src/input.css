@@ -1,1 +1,33 @@
 @import "tailwindcss";
+@keyframes blinkCursor {
+    50% { opacity: 0; }
+  }
+  .blink {
+    animation: blinkCursor 0.8s infinite;
+  }
+  .curved-bg {
+    border-radius: 52% 48% 100% 0% / 0% 100% 0% 100%;
+  }
+  .custom-border {
+    border-radius: 0% 100% 0% 100% / 80% 52% 48% 20%;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 70%;
+    }
+  }
+  .patron {
+    background-color: #fefefe;
+    opacity: 1;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #fefefe 40px
+      ),
+      repeating-linear-gradient(#f1f1f255, #f1f1f2);
+  }
